@@ -8,7 +8,7 @@ class Counter extends React.Component {
     super(props);
   }
   render() {
-    const {increment, decrement, counter} = this.props;
+    const { increment, decrement, counter } = this.props;
     return (
       <div>
         Current counter value: {counter}
