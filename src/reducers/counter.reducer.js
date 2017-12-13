@@ -1,11 +1,14 @@
 import * as types from '../constants/counter.const';
 
-export default function CounterApp(state = 0, action ) {
-  switch(action.type){
+export default function CounterReducer(state = 0, action) {
+  let newState = state;
+
+  switch (action.type) {
     case types.INCREMENT:
-      return state = state + 1;
+      return newState++;
     case types.DECREMENT:
-      return state = state - 1;
+      return newState--
+    default:
+      return state;
   }
-  return state;
 }
